@@ -21,9 +21,9 @@ public class test {
     public String baseurl = "https://demoqa.com/automation-practice-form";
     public WebDriver driver;
     @Test
-    public void testdemo() throws InterruptedException, AWTException {
-       driver.get(baseurl);
-    }
+        public void testdemo() throws InterruptedException, AWTException {
+           driver.get(baseurl);
+        }
 
 
     @Before
