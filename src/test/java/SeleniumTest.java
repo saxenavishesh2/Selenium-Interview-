@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SeleniumTest {
 
-    public String baseurl = "https://demoqa.com/automation-practice-form";
+    public String baseurl = "https://www.google.com/";
     public WebDriver driver;
 
     @Test
@@ -24,6 +25,7 @@ public class SeleniumTest {
     @Before
     public void init() {
         System.out.println("Opening Chrome browser");
+        WebDriverManager.chromedriver().setup();
         //System.setProperty("webdriver.chrome.driver", "chromedriver"); // Use if Chromedriver is not setup in Environment Variable settings
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
