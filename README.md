@@ -9,6 +9,6 @@ Preconditions:
 From Where to start?
 You need to write your code under "@Test" annotation
 
-Site URL is already mentioned in the code and navigation code to that url is already written
+Site URL Google is already mentioned in the code and navigation code to that url is already written
 
 So you directky need to start your code from the fields.
